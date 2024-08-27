@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Funcionários</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Consulta de Funcionários</h1>
+
+        <div class="flex-container">
+            <div class="consulta-section">
+                <h2>Consultar Funcionário</h2>
+                <label for="consultaPor">Consultar por:</label>
+                <select id="consultaPor">
+                    <option value="id">ID Funcionário</option>
+                    <option value="telefone">Número de Telefone</option>
+                </select>
+
+                <label for="consultaInput">ID ou Número:</label>
+                <input type="text" id="consultaInput" placeholder="Digite o ID ou Número">
+
+                <button onclick="consultarFuncionario()">Consultar</button>
+            </div>
+
+            <div class="verificar-section">
+                <h2>Verificar Links</h2>
+                <label for="linkInput">Link:</label>
+                <input type="text" id="linkInput" placeholder="Digite o link">
+
+                <button onclick="verificarLink()">Verificar</button>
+
+                <!-- Div para exibir o resultado da verificação do link -->
+                <div id="resultadoVerificacao"></div>
+            </div>
+        </div>
+
+        <div class="resultado-section">
+            <h3>Resultado da Consulta de Funcionário:</h3>
+            <div id="resultadoConsulta"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
